@@ -232,9 +232,9 @@ const UserSchema = new mongoose.Schema({
         require: false,
         default: "ACTIVE",
     },
-	cars: [CarSchema],
-	payment_methods: [PaymentMethodSchema],
-	addresses: [AddressSchema]
+	car: [CarSchema],
+	payment_method: [PaymentMethodSchema],
+	address: [AddressSchema]
 },
 { timestamps: true }
 );
