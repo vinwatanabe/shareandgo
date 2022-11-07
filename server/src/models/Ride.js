@@ -4,6 +4,7 @@ const PassengerSchema = new mongoose.Schema({
 	user: {
 		ref: 'User',
 		type: mongoose.Schema.Types.ObjectId,
+		require: true,
 	},
 	passenger_status: {
         type: String,
@@ -33,6 +34,7 @@ const SeatRequestSchema = new mongoose.Schema({
 	user: {
 		ref: 'User',
 		type: mongoose.Schema.Types.ObjectId,
+		require: true,
 	},
 	message: {
         type: String,
@@ -98,10 +100,12 @@ const RideSchema = new mongoose.Schema({
 	user: {
 		ref: 'User',
 		type: mongoose.Schema.Types.ObjectId,
+		require: true,
 	},
 	car: {
 		ref: 'Car',
 		type: mongoose.Schema.Types.ObjectId,
+		require: true,
 	},
 	passenger: [PassengerSchema],
 	seat_request: [SeatRequestSchema],
