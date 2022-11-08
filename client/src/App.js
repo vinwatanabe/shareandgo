@@ -2,24 +2,24 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 
-import Gateway from './Pages/Gateway';
-import Registration from './Pages/Registration';
-import Login from './Pages/Login';
-import MainPassenger from './Pages/MainPassenger';
-import DestinationPassenger from './Pages/DestinationPassenger';
-import DriversAvailable from './Pages/DriversAvailable';
-import RideInfo from './Pages/RideInfo';
-import RideStatus from './Pages/RideStatus';
-import RideCompleteReview from './Pages/RideCompleteReview';
-import UserAccountPage from './Pages/UserAccountPage';
-import Messages from './Pages/Messages';
-import MessageContent from './Pages/MessageContent';
+import Gateway from './pages/Gateway';
+import Registration from './pages/Registration';
+import Login from './pages/Login';
+import MainPassenger from './pages/MainPassenger';
+import DestinationPassenger from './pages/DestinationPassenger';
+import DriversAvailable from './pages/DriversAvailable';
+import RideInfo from './pages/RideInfo';
+import RideStatus from './pages/RideStatus';
+import RideCompleteReview from './pages/RideCompleteReview';
+import UserAccountPage from './pages/UserAccountPage';
+import Messages from './pages/Messages';
+import MessageContent from './pages/MessageContent';
 
 function App() {
 	return (
 		<>
 			<Router>
-				<div className='container'>
+				<div className='container-sm'>
 					<Routes>
 						<Route path='/' element={<Gateway />} />
 						<Route path='/registration' element={<Registration />} />

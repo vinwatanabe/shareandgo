@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+:root{
+    --SGGreen: #01D95E;
+    --SGDarkGreen: #1E874B;
+    --SGBlack: #171921;
+    --SGAlpha: rgba(0, 0, 0, 0);
+    --SGFont: 'Open Sans', sans-serif;
+    --SGTitleSize: 1.5em;
+    --SGTextAssetSize: 1em;
+    --SGTextSize: 0.875em;
+}
+
+*{
+    background-color: var(--SGBlack);
+    font-family: var(--SGFont);
+    font-size: var(--SGTextAssetSize);
+    color: white;
+    box-sizing: border-box;
+    
+}
+
+.btn-primary {
+    background-color: var(--SGGreen);
+    border: var(--SGGreen);
+    font-size: var(--SGTextAssetSize);
+    font-weight: 700;
+    border-radius: 25px;
+    padding: 12px 0px;
+    /*min-width: 100%;*/
+}
+
+.btn-primary:hover {
+    background-color: var(--SGDarkGreen);
+}
+
+.btn-secondary {
+    background-color: var(--SGAlpha);
+    border: var(--SGGreen) 2px solid;
+    font-size: var(--SGTextAssetSize);
+    font-weight: 700;
+    color: var(--SGGreen);
+    border-radius: 25px;
+    padding: 12px 00px;
+    /*min-width: 100%;*/
+}
+
+.btn-secondary:hover {
+    background-color: var(--SGDarkGreen);
+    border: var(--SGDarkGreen) 2px solid;
+}
+
+.bg-img {
+    background-image: url('./images/sharego-icon.png'), url('./images/sharego-icon.png');
+    background-repeat: no-repeat, no-repeat;
+}
