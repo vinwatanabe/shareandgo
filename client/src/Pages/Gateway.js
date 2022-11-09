@@ -14,16 +14,16 @@ const Gateway = () => {
 						alt='Share & Go Logo'
 					/>
 				</figure>
-				<div className='row text-center'>
+				<div className='row text-center d-block'>
 					<ButtonPrimary
 						text='Register'
-						className='col me-3'
+						className='col-6'
 						link='/registration'
 						clickAction=''
 					/>
 					<ButtonSecondary
 						text='Login'
-						className='col'
+						className='col-6'
 						link='/login'
 						clickAction=''
 					/>

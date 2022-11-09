@@ -14,11 +14,13 @@ import RideCompleteReview from './pages/RideCompleteReview';
 import UserAccountPage from './pages/UserAccountPage';
 import Messages from './pages/Messages';
 import MessageContent from './pages/MessageContent';
+import Header from './components/Header';
 
 function App() {
 	return (
 		<>
 			<Router>
+				<Header />
 				<div className='container-sm'>
 					<Routes>
 						<Route path='/' element={<Gateway />} />
