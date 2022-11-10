@@ -64,6 +64,10 @@ nav.bg-dark {
 	font-weight: 700;
 }
 
+.offcanvas-body li {
+	font-size: var(--SGTitleSize);
+}
+
 input[type='text'],
 input[type='email'],
 input[type='password'],
