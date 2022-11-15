@@ -1,17 +1,24 @@
 import React from 'react';
 import '../css/RideCard.css';
-import DriverImage from '../images/profile-picture-mockup.jpg';
 
-const RideCard = () => {
+const RideCard = ({
+	driverPhoto,
+	driverName,
+	pickupLocation,
+	destination,
+	date,
+	time,
+	price,
+}) => {
 	return (
 		<div className='ride-card'>
 			<div className='photo'>
 				<figure className='driver-picture'>
-					<img src={DriverImage} alt='Driver name' />
+					<img src={driverPhoto} alt={driverName} />
 				</figure>
 			</div>
 			<div className='driver-info'>
-				<p className='text-important'>Mathew Pitts</p>
+				<p className='text-important'>{driverName}</p>
 
 				<i className='star'>
 					<span class='material-symbols-outlined filled'>star</span>
@@ -29,14 +36,14 @@ const RideCard = () => {
 					<span class='material-symbols-outlined'>star</span>
 				</i>
 
-				<p className='ride-details'>From: 700 Royal Street</p>
-				<p className='ride-details'>To: 31254 Chalotte Avenue</p>
+				<p className='ride-details'>From: {pickupLocation}</p>
+				<p className='ride-details'>To: {destination}</p>
 			</div>
 			<div className='ride-info'>
-				<p className='ride-details'>10/15/2022</p>
-				<p className='ride-details'>9:45am</p>
+				<p className='ride-details'>{date}</p>
+				<p className='ride-details'>{time}</p>
 				<br></br>
-				<p className='text-important'>$58.42</p>
+				<p className='text-important'>{price}</p>
 			</div>
 		</div>
 	);
